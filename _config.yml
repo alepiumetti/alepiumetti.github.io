@@ -48,7 +48,7 @@ author:
       url:
 home:
   section1: <h1>Alejandro Piumetti</h1>
-  section2: <h2>Desarrollador web y emprendedor</h2>
+  section2: <h2>Desarrollador web</h2>
   section3: <div class="social-links"><a class="ico-github btn" href="https://github.com/alepiumetti/" title="View on GitHub"></a></div>
 blog:
   cc_license: http://creativecommons.org/licenses/by-sa/4.0/ # A link to CC License of your choice.
