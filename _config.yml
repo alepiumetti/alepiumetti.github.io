@@ -1,7 +1,7 @@
 ###########
 # site.title
 
-title: Alejandro Piumetti - Blog
+title: Piumaster - Blog
 description: Lugar donde escribo cosas
 # baseurl: "/jekyllBear" # the subpath of your site, e.g. /blog/
 url: "https://alepiumetti.github.io" # the base hostname & protocol for your site
