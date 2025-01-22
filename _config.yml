@@ -56,12 +56,13 @@ exclude:
 exclude: [vendor]
 
 Blog: /blog
+Resume: /resume
 
 # Add general links to site pages here
-links:
-  Resume: /resume
+# links:
+#   Resume: /resume
   
 
 # Add links for more focus here
-# special_links:
-#   "Search": https://duckduckgo.com
+special_links:
+  "Github": https://github.com/alepiumetti
