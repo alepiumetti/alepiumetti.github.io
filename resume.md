@@ -42,7 +42,3 @@ ___
 ### En paralelo hago:
 
 - [HackFun](https://hackfunrosario.com/) - Hackerspace Itinerante del que formo parte.
-
-## Seguime
-
-[Mastodon](https://rebel.ar/@piumaster)

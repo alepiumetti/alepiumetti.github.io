@@ -1,24 +1,15 @@
 ---
 layout: default
-title: Hello
+title: Inicio?
 ---
 
 
-## An easy to use, minimal, text focused Jekyll theme
+## Del dicho al hecho. 
 
-[Bear Blog](https://bearblog.dev/) is *"a blogging platform where words matter most"*. 
+Cómo costumbre de inicio del año tengo: Ver la trilogía del señor de los anillos, las 3 pelis de kung fu panda, abrir un servidor de minecraft con amigues y retomar el blog. 
 
-This is a port of it's theme to Jekyll, with some tweaks. So you can use GitHub Pages to host your blog while getting the same awesome Bear Blog feels.
+Así que acá estoy, retomando el blog por enésima vez en mi vida.
 
-**Stop worrying about the style, focus on your writing.**
+___ 
 
-- Looks great on *any* device
-- Tiny, optimized, and awesome pages
-- No trackers, ads, or scripts, *did I mention minimal already?*
-- Auto light and dark themes
-- Tag support, to filter blog pages
-- Quick, *15 minute* setup
-- Gallery view for your images
-- Code highlighting
-
-Have a look around, this website is already themed with **jekyllBear**. If you like it, head over to the GitHub [repository](https://github.com/knhash/jekyllBear) for installation instructions.
+Encontrame hablando de más en [mastodon](https://rebel.ar/@piumaster)
