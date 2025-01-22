@@ -1,8 +1,8 @@
 ---
 layout: blog
 title: Blog
-description: Here be writings
+description: Donde escribo
 permalink: /blog
 ---
 
-Here be writings. Mostly mundane, sometimes fanciful.
+Mi bloc de notas público
