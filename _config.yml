@@ -56,11 +56,10 @@ exclude:
 exclude: [vendor]
 
 Blog: /blog
-Resume: /resume
 
 # Add general links to site pages here
-# links:
-#   Resume: /resume
+links:
+    Resume: /resume
   
 
 # Add links for more focus here
