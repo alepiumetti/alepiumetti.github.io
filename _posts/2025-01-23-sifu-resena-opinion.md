@@ -44,7 +44,7 @@ Algo que te enseña el juego estando bastante adelantado es que si sos paciente 
 
 ___
 
-Algo que me pareció super bueno es la rejugabilidad que tiene, no resulta molesto tener que rejugar cada nivel muchas veces hasta llegar en un buen estado a la siguiente pelea.
+Algo que me pareció super bueno es la rejugabilidad que tiene, no resulta molesto tener que hacer cada nivel muchas veces hasta llegar en un buen estado a la siguiente pelea.
 
 También tiene un modo Arena, que si estás aburrido un rato podes entrar a pegarte unos buenos sopapos con algún que otro agregado al gameplay.
 
