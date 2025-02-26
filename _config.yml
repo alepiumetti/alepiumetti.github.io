@@ -36,6 +36,9 @@ collections:
   my_tags:
     output: true
     permalink: /tagged/:slug/
+  journey:
+    output: true
+    permalink: /journey/:title/
 defaults:
   -
     scope:
@@ -56,12 +59,11 @@ exclude:
 exclude: [vendor]
 
 Blog: /blog
+Journey: /journey
 
 # Add general links to site pages here
-links:
-    Resume: /resume
-  
 
 # Add links for more focus here
 special_links:
   "Github": https://github.com/alepiumetti
+  "LinkedIn": https://www.linkedin.com/in/alejandro-piumetti/

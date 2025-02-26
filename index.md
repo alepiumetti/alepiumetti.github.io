@@ -12,4 +12,16 @@ Así que acá estoy, retomando el blog por enésima vez en mi vida.
 
 ___ 
 
+## Recent Posts
+<ul>
+  {% for post in site.posts limit:3 %}
+    <li>
+      <span>{{ post.date | date: "%Y-%m-%d" }}</span>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+___ 
+
 Encontrame hablando de más en [mastodon](https://rebel.ar/@piumaster)

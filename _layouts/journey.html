@@ -1,0 +1,51 @@
+---
+layout: compress
+---
+
+{% include head.html %}
+
+<main>
+
+    {% include header.html %}
+
+    {{ content }}
+
+    <hr style="border: 1px solid;">
+
+    <!-- <ul class="blog-posts"> -->
+    {% assign journey_list = '' | split: ',' %}
+    {% assign sorted_journeys = site.journey | sort: 'date' | reverse %}
+    {% for journey in sorted_journeys %}
+    {% for tag in journey.tags %}
+    {% assign journey_list = journey_list | push: journey %}
+    {% endfor %}
+    {% endfor %}
+    {% for journey in journey_list %}
+    {% unless journey == previous %}
+    <span>
+        <time datetime="2022-01-28" pubdate="">
+            {{ journey.date | date: "%b %-d, %Y" }}
+        </time>
+    </span>
+    <h1>{{ journey.title }}</h1>
+    <h4 class="subtitle">{{ journey.subtitle }}</h4>
+
+    {{ journey.content }}
+
+    <hr style="border: 1.61803px solid;">
+
+    {% endunless %}
+    {% assign previous = journey %}
+    {% endfor %}
+
+    <!-- </ul> -->
+
+
+
+</main>
+
+{% include footer.html %}
+
+</body>
+
+</html>
