@@ -12,7 +12,7 @@ Así que acá estoy, retomando el blog por enésima vez en mi vida.
 
 ___ 
 
-## Recent Posts
+## Lo último que escribí
 <ul>
   {% for post in site.posts limit:3 %}
     <li>
@@ -24,4 +24,4 @@ ___
 
 ___ 
 
-Encontrame hablando de más en [mastodon](https://rebel.ar/@piumaster)
+Encontrame hablando de más en [mastodon](https://rebel.ar/@piumaster) 
