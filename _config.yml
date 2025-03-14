@@ -20,6 +20,9 @@ feed:
   title: Piumaster | Alejandro Piumetti
   description: Lugar donde escribo cosas
   path: feed.xml
+  collections:
+    - journey
+    - posts
 
 whitelist:
   - jekyll-redirect-from
@@ -74,3 +77,4 @@ Journey: /journey
 special_links:
   "Github": https://github.com/alepiumetti
   "LinkedIn": https://www.linkedin.com/in/alejandro-piumetti/
+  "RSS": https://alepiumetti.github.io/feed.xml
