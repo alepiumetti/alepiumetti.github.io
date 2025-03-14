@@ -13,6 +13,18 @@ url: "https://alepiumetti.github.io" # the base hostname & protocol for your sit
 
 plugins:
   - jekyll-redirect-from
+  - jekyll-feed
+
+
+feed:
+  path: feed/blog.xml
+  title: "Piumaster Blog | Alejandro Piumetti"
+  description: "Blog posts feed"
+  collections:
+    journey:
+      path: feed/journey.xml
+      title: "Piumaster Journey | Alejandro Piumetti"
+      description: "Journey feed"
 
 whitelist:
   - jekyll-redirect-from
