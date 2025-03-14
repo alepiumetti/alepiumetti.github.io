@@ -17,12 +17,14 @@ plugins:
 
 
 feed:
-  title: Piumaster | Alejandro Piumetti
-  description: Lugar donde escribo cosas
-  path: feed.xml
+  path: feed/blog.xml
+  title: "Piumaster Blog | Alejandro Piumetti"
+  description: "Blog posts feed"
   collections:
-    - journey
-    - posts
+    journey:
+      path: feed/journey.xml
+      title: "Piumaster Journey | Alejandro Piumetti"
+      description: "Journey feed"
 
 whitelist:
   - jekyll-redirect-from
