@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Mac On Mint"
-date:   2025-01-25 20:10:00 +03
+date:   2025-05-29 20:10:00 +03
 tags: [dev,linux,exp]
 ---
 
