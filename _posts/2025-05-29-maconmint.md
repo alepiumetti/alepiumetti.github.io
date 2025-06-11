@@ -70,6 +70,8 @@ De todas maneras me siguen faltando cosas por testear:
 
 Cabe aclarar que no es mi computadora principal pero, teniendo en cuenta lo rápido que está funcionando y lo útil que está siendo tener una PC cuya batería dure un par de horas y sea liviana, me la estoy llevando a todos lados para tener un acceso rápido a mis cosas o si tengo que resolver alguna emergencia.
 
+![MacOnMint](../assets/images/maconmint.png)
+
 #### Proximos pasos
 
 Por el momento la voy a seguir testeando, no quiero agregarle más cosas ya que la idea es mantener todo lo más limpio posible y dejarle lo que necesite para llevar adelante la carrera. 
