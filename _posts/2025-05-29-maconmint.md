@@ -3,6 +3,7 @@ layout: post
 title:  "Mac On Mint"
 date:   2025-05-29 20:10:00 +03
 tags: [dev,linux,exp]
+mastodon_url: "https://rebel.ar/@piumaster/114685208861274271"
 ---
 
 ### Peleando contra la obsolescencia

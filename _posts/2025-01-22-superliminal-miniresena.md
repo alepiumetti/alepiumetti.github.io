@@ -3,6 +3,7 @@ layout: post
 title:  "Superliminal - Mini reseña"
 date:   2025-01-22 18:44:00 +03
 tags: [games]
+mastodon_url: "https://rebel.ar/@piumaster/113874230327042809"
 ---
 
 > Sin spoilers
