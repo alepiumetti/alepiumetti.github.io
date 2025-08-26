@@ -31,6 +31,8 @@ mastodon_url: "https://rebel.ar/@piumaster/123456789"
 ### Features
 
 - Automatically fetches replies from Mastodon
+- Displays threaded comments with nested replies (comment threads)
+- Shows visual hierarchy with indentation and left borders for nested comments
 - Displays commenter avatars, names, and usernames
 - Shows comment dates and links to original Mastodon posts
 - Responsive design with dark mode support
@@ -46,7 +48,7 @@ mastodon_url: "https://rebel.ar/@piumaster/123456789"
 
 ### Technical details
 
-The system uses the Mastodon API's `/api/v1/statuses/{id}/context` endpoint to fetch replies to a specific post. It only displays top-level replies (not replies to replies) to keep the comment thread simple and focused.
+The system uses the Mastodon API's `/api/v1/statuses/{id}/context` endpoint to fetch replies to a specific post. It displays threaded comments, showing both top-level replies and nested replies (replies to comments) in a hierarchical structure with visual indentation.
 
 ### Privacy and moderation
 
