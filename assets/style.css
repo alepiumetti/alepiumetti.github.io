@@ -433,6 +433,29 @@ small a {
     margin-bottom: 0;
 }
 
+/* Nested comment styles */
+.comment-replies {
+    margin-top: 1rem;
+}
+
+.comment-depth-1 {
+    margin-left: 2rem;
+    border-left: 2px solid #e1e1e1;
+    padding-left: 1rem;
+}
+
+.comment-depth-2 {
+    margin-left: 2rem;
+    border-left: 2px solid #e1e1e1;
+    padding-left: 1rem;
+}
+
+.comment-depth-3 {
+    margin-left: 2rem;
+    border-left: 2px solid #e1e1e1;
+    padding-left: 1rem;
+}
+
 /* Dark mode styles for comments */
 @media (prefers-color-scheme: dark) {
     #mastodon-comments {
@@ -459,5 +482,11 @@ small a {
     
     .comment-date a {
         color: #aaa;
+    }
+    
+    .comment-depth-1,
+    .comment-depth-2,
+    .comment-depth-3 {
+        border-left-color: #555;
     }
 }

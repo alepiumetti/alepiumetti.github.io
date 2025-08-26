@@ -44,55 +44,103 @@ function displayComments(comments, instance) {
     return;
   }
   
-  // Filter out replies to other replies (keep only top-level replies)
-  const topLevelComments = comments.filter(comment => {
-    return !comment.in_reply_to_id || !comments.some(c => c.id === comment.in_reply_to_id);
-  });
+  // Build threaded comment structure
+  const commentTree = buildCommentTree(comments);
   
-  if (topLevelComments.length === 0) {
+  if (commentTree.length === 0) {
     commentsContainer.innerHTML = '<p><em>No hay comentarios aún. ¡Sé el primero en responder en Mastodon!</em></p>';
     return;
   }
   
   let commentsHtml = '<h3>Comentarios</h3>';
-  
-  topLevelComments.forEach(comment => {
-    const avatar = comment.account.avatar_static || comment.account.avatar;
-    const displayName = escapeHtml(comment.account.display_name || comment.account.username);
-    const username = escapeHtml(comment.account.username);
-    const acct = escapeHtml(comment.account.acct);
-    const url = comment.account.url;
-    const date = new Date(comment.created_at).toLocaleDateString('es-ES', {
-      year: 'numeric',
-      month: 'long', 
-      day: 'numeric',
-      hour: '2-digit',
-      minute: '2-digit'
-    });
-    const content = comment.content; // Content is already HTML from Mastodon
-    const commentUrl = comment.url;
-    
-    commentsHtml += `
-      <div class="mastodon-comment">
-        <div class="comment-header">
-          <img src="${escapeHtml(avatar)}" alt="${displayName}" class="comment-avatar">
-          <div class="comment-author">
-            <a href="${escapeHtml(url)}" target="_blank" rel="noopener">
-              <strong>${displayName}</strong> @${acct}
-            </a>
-            <div class="comment-date">
-              <a href="${escapeHtml(commentUrl)}" target="_blank" rel="noopener">${date}</a>
-            </div>
-          </div>
-        </div>
-        <div class="comment-content">
-          ${content}
-        </div>
-      </div>
-    `;
-  });
+  commentsHtml += renderCommentTree(commentTree);
   
   commentsContainer.innerHTML = commentsHtml;
+}
+
+function buildCommentTree(comments) {
+  // Create a map of comments by ID for quick lookup
+  const commentMap = new Map();
+  comments.forEach(comment => {
+    commentMap.set(comment.id, { ...comment, replies: [] });
+  });
+  
+  // Build the tree structure
+  const topLevelComments = [];
+  
+  comments.forEach(comment => {
+    const commentNode = commentMap.get(comment.id);
+    
+    if (comment.in_reply_to_id && commentMap.has(comment.in_reply_to_id)) {
+      // This is a reply to another comment
+      const parent = commentMap.get(comment.in_reply_to_id);
+      parent.replies.push(commentNode);
+    } else {
+      // This is a top-level comment (direct reply to the original post)
+      topLevelComments.push(commentNode);
+    }
+  });
+  
+  return topLevelComments;
+}
+
+function renderCommentTree(comments, depth = 0) {
+  let html = '';
+  
+  comments.forEach(comment => {
+    html += renderComment(comment, depth);
+  });
+  
+  return html;
+}
+
+function renderComment(comment, depth = 0) {
+  const avatar = comment.account.avatar_static || comment.account.avatar;
+  const displayName = escapeHtml(comment.account.display_name || comment.account.username);
+  const username = escapeHtml(comment.account.username);
+  const acct = escapeHtml(comment.account.acct);
+  const url = comment.account.url;
+  const date = new Date(comment.created_at).toLocaleDateString('es-ES', {
+    year: 'numeric',
+    month: 'long', 
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit'
+  });
+  const content = comment.content; // Content is already HTML from Mastodon
+  const commentUrl = comment.url;
+  
+  // Add nesting class for indentation
+  const nestingClass = depth > 0 ? ` comment-depth-${Math.min(depth, 3)}` : '';
+  
+  let html = `
+    <div class="mastodon-comment${nestingClass}">
+      <div class="comment-header">
+        <img src="${escapeHtml(avatar)}" alt="${displayName}" class="comment-avatar">
+        <div class="comment-author">
+          <a href="${escapeHtml(url)}" target="_blank" rel="noopener">
+            <strong>${displayName}</strong> @${acct}
+          </a>
+          <div class="comment-date">
+            <a href="${escapeHtml(commentUrl)}" target="_blank" rel="noopener">${date}</a>
+          </div>
+        </div>
+      </div>
+      <div class="comment-content">
+        ${content}
+      </div>
+  `;
+  
+  // Render replies recursively
+  if (comment.replies && comment.replies.length > 0) {
+    html += '<div class="comment-replies">';
+    html += renderCommentTree(comment.replies, depth + 1);
+    html += '</div>';
+  }
+  
+  html += '</div>';
+  
+  return html;
 }
 
 // Simple HTML escaping function for security
