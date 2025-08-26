@@ -1,0 +1,19 @@
+{% if page.mastodon_url %}
+<div id="mastodon-comments" data-toot-url="{{ page.mastodon_url }}">
+    <p><em>Loading comments...</em></p>
+</div>
+
+<div class="mastodon-cta">
+    <p>
+        💬 Want to join the conversation? <a href="{{ page.mastodon_url }}" target="_blank" rel="noopener">Reply on Mastodon</a>
+    </p>
+</div>
+
+<script src="{{ '/assets/mastodon-comments.js' | relative_url }}"></script>
+{% else %}
+<div class="mastodon-cta">
+    <p>
+        💬 Join the conversation on <a href="https://rebel.ar/@piumaster" target="_blank" rel="noopener">Mastodon</a>
+    </p>
+</div>
+{% endif %}

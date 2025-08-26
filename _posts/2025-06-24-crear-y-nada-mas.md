@@ -3,6 +3,7 @@ layout: post
 title:  "Crear y nada más"
 date:   2025-06-24 19:27:00 +03
 tags: [pensamientos,experiencias]
+mastodon_url: "https://rebel.ar/@piumaster/112668012345678901"
 ---
 
 Hace un par de días me crucé con un post de [Jeet que hablaba de "Crecer en la oscuridad"](https://www.jeetmehta.com/posts/thrive-in-obscurity). Mencionaba la idea de crear cosas que le gusten a uno mismo, de crear lo que te gustaría ver a vos y crear tu propio contenido "de culto" para un "fandom" en potencia.
