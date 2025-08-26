@@ -3,6 +3,7 @@ layout: post
 title:  "Pacto entre derrotados"
 date:   2025-07-09 21:16:00 +03
 tags: [pensamientos, libros, experiencias]
+mastodon_url: "https://rebel.ar/@piumaster/114829277669763164"
 ---
 
 Me estuvo pasando estos últimos meses que, a pesar de que no leo mucho, cada vez que encuentro algo para leer parece que es justo lo que tengo que leer. Me pasó con el libro "El Hobbit" que me prestó Nico, el cual tenía una dedicatoria para "Alejandro" con fecha a 10 días después de mi nacimiento. Me pasó al comprar un libro en una feria que tenía una firma de una persona de la cual yo ya tenía un disco de vinilo (comprado en otra feria) con la misma firma.
