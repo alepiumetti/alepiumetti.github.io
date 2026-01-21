@@ -3,6 +3,7 @@ layout: post
 title:  "Sifu - Mi Reseña | Opinión"
 date:   2025-01-23 09:53:00 +03
 tags: [games]
+mastodon_url: "https://rebel.ar/@piumaster/113880050694104299"
 ---
 ### Contexto
 

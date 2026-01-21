@@ -347,3 +347,146 @@ small a {
     padding: 50px;
     text-align: center;
 }
+
+/* Mastodon Comments */
+#mastodon-comments {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px dashed #ccc;
+}
+
+.mastodon-cta {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    border-left: 4px solid #3273dc;
+}
+
+.mastodon-cta p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.mastodon-comment {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.comment-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.75rem;
+}
+
+.comment-author {
+    flex: 1;
+}
+
+.comment-author a {
+    text-decoration: none;
+    color: #444;
+}
+
+.comment-author a:hover {
+    text-decoration: underline;
+}
+
+.comment-date {
+    font-size: 0.875rem;
+    color: #666;
+    margin-top: 0.25rem;
+}
+
+.comment-date a {
+    color: #666;
+    text-decoration: none;
+}
+
+.comment-date a:hover {
+    text-decoration: underline;
+}
+
+.comment-content {
+    line-height: 1.5;
+}
+
+.comment-content p {
+    margin: 0.5rem 0;
+}
+
+.comment-content p:first-child {
+    margin-top: 0;
+}
+
+.comment-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Nested comment styles */
+.comment-replies {
+    margin-top: 1rem;
+}
+
+.comment-depth-1 {
+    margin-left: 2rem;
+    border-left: 2px solid #e1e1e1;
+    padding-left: 1rem;
+}
+
+.comment-depth-2 {
+    margin-left: 2rem;
+    border-left: 2px solid #e1e1e1;
+    padding-left: 1rem;
+}
+
+.comment-depth-3 {
+    margin-left: 2rem;
+    border-left: 2px solid #e1e1e1;
+    padding-left: 1rem;
+}
+
+/* Dark mode styles for comments */
+@media (prefers-color-scheme: dark) {
+    #mastodon-comments {
+        border-top-color: #555;
+    }
+    
+    .mastodon-cta {
+        background-color: #2a2a2a;
+        border-left-color: #8cc2dd;
+    }
+    
+    .mastodon-comment {
+        background-color: #1a1a1a;
+        border-color: #555;
+    }
+    
+    .comment-author a {
+        color: #ddd;
+    }
+    
+    .comment-date {
+        color: #aaa;
+    }
+    
+    .comment-date a {
+        color: #aaa;
+    }
+    
+    .comment-depth-1,
+    .comment-depth-2,
+    .comment-depth-3 {
+        border-left-color: #555;
+    }
+}

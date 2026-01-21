@@ -3,6 +3,7 @@ layout: post
 title:  "Mac On Mint"
 date:   2025-05-29 20:10:00 +03
 tags: [dev,linux,exp]
+mastodon_url: "https://rebel.ar/@piumaster/114685208861274271"
 ---
 
 ### Peleando contra la obsolescencia
@@ -69,6 +70,8 @@ De todas maneras me siguen faltando cosas por testear:
 ### ¿El final?
 
 Cabe aclarar que no es mi computadora principal pero, teniendo en cuenta lo rápido que está funcionando y lo útil que está siendo tener una PC cuya batería dure un par de horas y sea liviana, me la estoy llevando a todos lados para tener un acceso rápido a mis cosas o si tengo que resolver alguna emergencia.
+
+![MacOnMint](../assets/images/maconmint.png)
 
 #### Proximos pasos
 
