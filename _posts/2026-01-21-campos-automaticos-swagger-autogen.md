@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pacto entre derrotados"
+title:  "Eliminar campos automáticos Swagger Autogen"
 date:   2026-01-06 10:53:00 +03
 tags: [dev]
 mastodon_url: ""
