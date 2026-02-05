@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Mis consumos y recomendaciones de enero"
-date: 2026-01-06 10:53:00 +03
+date: 2026-02-05 20:19:00 +03
 tags: [libros, games, general]
-mastodon_url: ""
+mastodon_url: "https://rebel.ar/@piumaster/116020587305069226"
 ---
 
 Estas últimas semanas estuve más activo como consumidor que de creador por lo que dejo algunas recomendaciones de cosas que me resultaron interesantes, cosas que estoy haciendo o probando.
